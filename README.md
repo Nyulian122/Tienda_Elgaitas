@@ -1,10 +1,9 @@
-# Juego de memoria
-
+# Tienda El Gaitas
 Este es mi repositorio, en el cual estoy trabajando en mi juego de cartas de memoria.
 
 ## Uso
 
-El juego consiste en un juego de memoria al azar.
+En este Repo creare una tienda desde 0 usando la APIS
 
 ## Contribución
 
