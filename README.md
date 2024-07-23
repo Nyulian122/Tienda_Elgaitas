@@ -1,5 +1,5 @@
 # Tienda El Gaitas
-Este es mi repositorio, en el cual estoy trabajando en mi juego de cartas de memoria.
+Este es mi repositorio, en el cual estoy trabajando en mi tienda
 
 ## Uso
 
