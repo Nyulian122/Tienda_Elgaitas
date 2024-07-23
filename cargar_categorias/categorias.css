@@ -1,0 +1,37 @@
+/* Contenedor de la descripción de la categoría */
+#div_summery_description {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 20rem;
+    height: 125px; /* Permitir altura automática para contenido variable */
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #fff; /* Fondo blanco para un diseño limpio */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio inferior */
+    transition: transform 0.3s ease; /* Transición suave para hover */
+}
+
+/* Hover efecto para el contenedor */
+#div_summery_description:hover {
+    transform: translateY(-5px); /* Elevar ligeramente en hover */
+}
+
+/* Subdivisiones dentro del contenedor */
+#div_summery_description div {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Permitir altura automática */
+    margin-bottom: 1rem; /* Espacio inferior entre divisiones */
+}
+
+/* Texto de categoría */
+.categoria_txt {
+    padding: 1rem;
+    font-size: 1.8rem; /* Ajustar el tamaño de fuente */
+    font-weight: bold;
+    color: #333; /* Color de texto oscuro para buena legibilidad */
+    border-bottom: 2px solid #f0f0f0; /* Línea inferior sutil */
+    margin-bottom: 1rem; /* Espacio inferior */
+    text-align: center; /* Centrar texto */
+}

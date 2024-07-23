@@ -1,0 +1,171 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+/* Header Styles */
+#header {
+    background-color: #8b5e3c; /* Fondo rústico */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #fffaf0; /* Texto claro */
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fffaf0; /* Texto claro */
+}
+
+.menu {
+    display: none; /* Hide menu icon on larger screens */
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fffaf0; /* Icono claro */
+}
+
+.div_buscador {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    width: 50%;
+    max-width: 600px;
+}
+
+.buscador {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.lupa {
+    background-color: #c06014; /* Color rústico */
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fffaf0; /* Icono claro */
+}
+
+.carrito_compras, .user {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fffaf0; /* Icono claro */
+}
+
+.carrito_compras {
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: block; /* Show menu icon on smaller screens */
+    }
+    .div_buscador {
+        width: 70%;
+    }
+}
+
+/* Footer Styles */
+#footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #8b5e3c; /* Fondo rústico */
+    color: #fffaf0; /* Texto claro */
+    padding: 2rem 0;
+}
+
+.arriba_footer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sigenos {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fffaf0; /* Texto claro */
+}
+
+.imgs_redes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.img {
+    width: 4rem;
+    height: 4rem;
+    filter: invert(0.8); /* Asegura que los iconos tengan un aspecto más suave */
+}
+
+.abajo_footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 6rem 6rem 3rem;
+    background-color: #56351e; /* Fondo más oscuro */
+    color: #efe8dd; /* Texto más claro */
+}
+
+.logotipo_foter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: auto;
+}
+
+.logotipo_foter span {
+    font-size: 4rem;
+    color: #fffaf0; /* Icono claro */
+}
+
+.name_tienda_footer {
+    font-size: 3rem;
+    color: #fffaf0; /* Texto claro */
+}
+
+.contactos, .productos {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: #efe8dd; /* Texto más claro */
+}
+
+.contacto_text, .categorias_footer {
+    margin: 0.5rem 0;
+}

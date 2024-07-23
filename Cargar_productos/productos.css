@@ -1,0 +1,100 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif; /* Fuente más rústica */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f1ea; /* Fondo más cálido */
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #efe8dd; /* Fondo de contenido */
+}
+
+/* Product Styles */
+#div_product_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para cada producto */
+.box_img {
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+    transition: transform 0.3s ease-in-out;
+}
+.box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 2px solid #8b5e3c; /* Marco de la imagen */
+    border-radius: 0.5rem;
+}
+.name {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5c3b1e; /* Color de texto rústico */
+    text-align: center;
+}
+.item_product {
+    display: grid;
+    grid-template-rows: 11.5rem 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 22rem;
+    border: 1px solid #8b5e3c; /* Bordes rústicos */
+    border-radius: 0.5rem;
+    background-color: #fffaf0; /* Fondo de tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.item_product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.caja_descri {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3.5rem 1.3rem 3rem;
+    padding: 0.3rem;
+    background-color: #f5e8c7; /* Fondo de descripción */
+    border-top: 1px solid #8b5e3c; /* Borde superior */
+}
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+    color: #d2691e; /* Color de precio */
+    font-weight: bold;
+}
+.buy_btn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b4226; /* Botón más oscuro */
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buy_btn:hover {
+    background-color: #56351e;
+}

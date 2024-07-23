@@ -1,0 +1,27 @@
+.body{
+    display: grid;
+    grid-template-columns: 22.5rem 1fr;
+    grid-template-rows: 4rem 5rem 5rem 1fr;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 1.5rem;
+}
+#div_product_list{
+    display: grid;
+    grid-template-columns: repeat(5, 20rem);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+}
+.ocultar{
+    display: none;
+}
+.acrivar_b {
+    display: block;
+}
+.acrivar_f {
+    display: flex;
+}
+.acrivar_g {
+    display: grid;
+}

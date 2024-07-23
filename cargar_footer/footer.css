@@ -1,0 +1,78 @@
+#footer {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #8b5e3c; /* Fondo rústico */
+    color: #fffaf0; /* Texto claro */
+    padding: 1rem 0;
+    margin-top: 700px;
+}
+
+.arriba_footer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sigenos {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fffaf0; /* Texto claro */
+}
+
+.imgs_redes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.img {
+    width: 4rem;
+    height: 4rem;
+    filter: invert(0.8); /* Asegura que los iconos tengan un aspecto más suave */
+}
+
+.abajo_footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 6rem 6rem 3rem;
+    background-color: #56351e; /* Fondo más oscuro */
+    color: #efe8dd; /* Texto más claro */
+}
+
+.logotipo_foter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: auto;
+}
+
+.logotipo_foter span {
+    font-size: 4rem;
+    color: #fffaf0; /* Icono claro */
+}
+
+.name_tienda_footer {
+    font-size: 3rem;
+    color: #fffaf0; /* Texto claro */
+}
+
+.contactos, .productos {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: #efe8dd; /* Texto más claro */
+}
+
+.contacto_text, .categorias_footer {
+    margin: 0.5rem 0;
+}
